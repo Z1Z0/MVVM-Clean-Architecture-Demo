@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesListViewController" customModule="MVVM_Clean_Architecture_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="moviesCollectionView" destination="XfY-hW-bA6" id="gzn-kU-llR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XfY-hW-bA6">
+                    <rect key="frame" x="0.0" y="139.66666666666669" width="375" height="672.33333333333326"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="thh-4J-XyS">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your favorite Movies app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFo-LT-ZQu">
+                    <rect key="frame" x="16" y="47.000000000000007" width="343" height="76.666666666666686"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="MainBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="zFo-LT-ZQu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0s3-F9-NT4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XfY-hW-bA6" secondAttribute="trailing" id="41v-Lk-IV3"/>
+                <constraint firstItem="XfY-hW-bA6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F9p-FV-09v"/>
+                <constraint firstAttribute="trailing" secondItem="zFo-LT-ZQu" secondAttribute="trailing" constant="16" id="Nbk-uX-ebD"/>
+                <constraint firstItem="zFo-LT-ZQu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="dIO-Mv-OVN"/>
+                <constraint firstItem="XfY-hW-bA6" firstAttribute="top" secondItem="zFo-LT-ZQu" secondAttribute="bottom" constant="16" id="dbe-Pj-DVW"/>
+                <constraint firstAttribute="bottom" secondItem="XfY-hW-bA6" secondAttribute="bottom" id="ucn-lt-mLG"/>
+            </constraints>
+            <point key="canvasLocation" x="52" y="-11.083743842364532"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainBackgroundColor">
+            <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

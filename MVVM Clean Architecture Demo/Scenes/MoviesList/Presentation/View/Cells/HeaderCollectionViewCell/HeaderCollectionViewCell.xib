@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionViewCell" id="gTV-IL-0wX" customClass="HeaderCollectionViewCell" customModule="MVVM_Clean_Architecture_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3in-lf-AsW">
+                        <rect key="frame" x="16.000000000000004" y="16" width="37.333333333333343" height="38"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAv-4Q-MrD">
+                        <rect key="frame" x="285.66666666666669" y="19.666666666666664" width="62.333333333333314" height="30.666666666666664"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="See All">
+                            <fontDescription key="titleFontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="kAv-4Q-MrD" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Bxk-UF-8UT"/>
+                <constraint firstItem="3in-lf-AsW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Fga-Xq-dhD"/>
+                <constraint firstItem="3in-lf-AsW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="IgG-F1-gtE"/>
+                <constraint firstAttribute="trailing" secondItem="kAv-4Q-MrD" secondAttribute="trailing" constant="16" id="pfa-Y2-kfX"/>
+                <constraint firstAttribute="bottom" secondItem="3in-lf-AsW" secondAttribute="bottom" constant="16" id="u6n-aP-qUd"/>
+            </constraints>
+            <size key="customSize" width="364" height="70"/>
+            <connections>
+                <outlet property="movieSectionTitleLabel" destination="3in-lf-AsW" id="7Tg-AF-xMv"/>
+                <outlet property="seeAllMoviesButton" destination="kAv-4Q-MrD" id="Iou-Qc-PeU"/>
+            </connections>
+            <point key="canvasLocation" x="258.46153846153845" y="-4.2654028436018958"/>
+        </collectionViewCell>
+    </objects>
+</document>
